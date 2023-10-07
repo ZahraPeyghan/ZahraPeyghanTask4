@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="RegisterStyle.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css">
+</head>
+<body>
+    <div class="divcenter">
+    <br>
+    <br>
+    <form name="form" action="#" method="post">
+    <h1>Register Form</h1><br>
+    <input type="text" placeholder="User name"  maxlength="20" minlength="8" pattern="^[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  required> <br><br>
+    <input type="number" placeholder="Password"  required><br><br>
+    <button >Register</button><br>
+    <p>Not a members? <a href="#"> Singup now</a></form>
+    </div>
+    <script>
+     function check(){
+      var eror_email=document.getElementById('email').value;
+      if(eror_email==='') document.getElementById('email_eror').innerHTML="";
+      else document.getElementById('email_eror').innerHTML=""; 
+      var eror_password=document.getElementById('password').value;
+      if(eror_password==='') document.getElementById('password_eror').innerHTML="";
+      else document.getElementById('password_eror').innerHTML=""; 
+      var adsain=eror_email.indexOf("@");
+     if (adsain<1)
+  {
+    document.getElementById('email_eror').innerHTML="";
+  return false;
+  }
+}
+  </script>
+</body>
+</html>
